@@ -1,0 +1,7 @@
+node_modules/
+web/dist/
+data/
+.npm-cache/
+.git/
+*.log
+.DS_Store

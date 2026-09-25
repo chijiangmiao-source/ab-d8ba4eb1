@@ -1,0 +1,21 @@
+{
+  "name": "optical-bench-release",
+  "version": "1.0.0",
+  "private": true,
+  "description": "低温光学台参数发布：采集器暂存-确认-原子生效的状态机服务与 React 发布页",
+  "type": "module",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace web",
+    "test": "npm run test --workspace server",
+    "start": "npm run start --workspace server",
+    "verify": "node scripts/verify.mjs",
+    "depends": "npm install --no-audit --no-fund"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
